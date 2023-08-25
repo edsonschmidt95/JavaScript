@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <style>
+        body{
+            font-size: 20px;
+        }
+       
+    </style>
+</head>
+<body>
+    <h1>calculadora simples</h1>
+    <label for="text1">ditige um número</label>
+    <input type="number" name="text1" id="text1"> <br>
+    <label for="text2">ditige um número</label>
+    <input type="number" name="text2" id="text2"> <br>
+    <input type="button" value="+" onclick="somar()">
+    <input type="button" value="-" onclick="subtrair()">
+    <input type="button" value="X" onclick="multiplicar()">
+    <input type="button" value="/" onclick="divisão()">
+
+    <div id="res">
+        resultado:
+    </div>
+    <script>
+            function somar(){
+            var text1 = document.getElementById('text1');
+            var text2 = document.getElementById('text2');
+            var res = document.getElementById('res');
+            var n1 = Number(text1.value);
+            var n2 = Number(text2.value);
+            var s = n1 + n2;
+            res.innerHTML = `A soma entre ${n1} e ${n2} é igual a ${s}`;
+        }
+        function subtrair(){
+            var text1 = document.getElementById('text1');
+            var text2 = document.getElementById('text2');
+            var res = document.getElementById('res');
+            var n1 = Number(text1.value);
+            var n2 = Number(text2.value);
+            var s = n1 - n2;
+            res.innerHTML = `A subtração entre ${n1} e ${n2} é igual a ${s}`;
+        }
+        function multiplicar(){
+            var text1 = document.getElementById('text1');
+            var text2 = document.getElementById('text2');
+            var res = document.getElementById('res');
+            var n1 = Number(text1.value);
+            var n2 = Number(text2.value);
+            var s = n1 * n2;
+            res.innerHTML = `A multiplicação entre ${n1} e ${n2} é igual a ${s}`;
+        }
+        function divisão(){
+            var text1 = document.getElementById('text1');
+            var text2 = document.getElementById('text2');
+            var res = document.getElementById('res');
+            var n1 = Number(text1.value);
+            var n2 = Number(text2.value);
+            var s = n1 / n2;
+            res.innerHTML = `A divisão entre ${n1} e ${n2} é igual a ${s}`;
+        }
+
+    </script>
+</body>
+</html>
