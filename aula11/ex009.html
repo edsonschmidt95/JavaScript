@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nacionalidade</title>
+    <style>
+        #nac{
+            width: 50px;
+        }
+        #res{
+            background-color: black;
+            color: white;
+            width: fit-content;
+        }
+    </style>
+</head>
+<body>
+    <h1>teste de nacionalidade</h1>
+    <label for="nac">que pais você nasceu?</label>
+    <input type="text" name="nac" id="nac">
+    <input type="button" value="verificar" onclick="ver()">
+    <div id="res"></div>
+<script>
+    function ver(){
+        var pais=document.getElementById('nac')
+        var res=document.getElementById('res')
+        var resp = pais.value.toLowerCase()
+        if(resp !== 'brasil'){
+            res.innerHTML+=`você é estrangeira`
+        }else {
+            res.innerText+=`você é brasileira`
+        }
+    }
+</script>
+</body>
+</html>
