@@ -1,0 +1,32 @@
+body{
+    background-color: rgb(78, 78, 247);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+header{
+    color: white;
+    text-align: center;
+}
+section{
+    color: white;
+    text-align: center;
+    font-size: 1.5em;
+    background-color: rgba(255, 255, 255, 0.356);
+    border-radius: 10px;
+    padding: 15px;
+    width: 500px;
+    margin: auto;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.644);
+    
+}
+footer{
+    color: white;
+    text-align: center;
+}
+img{
+    padding-top: 10px;
+    display: block;
+    margin: auto;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+}
