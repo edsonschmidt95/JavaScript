@@ -1,10 +1,18 @@
-function contar(){
-    var ini=document.getElementById('ini')
-    var fim=document.getElementById('fim')
-    var pul=document.getElementById('pul')
-     if(ini.Value.length==0 || fim.Value.length==0 ||  pul.Value.length==0 ){
-        window.alert('[ERRO] falta dados')
-     }else{
-        alert('tudo OK')
-     }
+function tabuada(){
+   var num = document.getElementById('num')
+   var tab = document.getElementById('seltab')
+
+   if (num.value.length  ==0){
+     window.alert('digite um número')
+   } else{
+      var n = Number(num.value )
+      var c=1
+      tab.innerHTML=  ''
+      while(c<=10){
+         var item= document.createElement('option')
+         item.text= `${n} X ${c} = ${n*c}`
+         tab.appendChild(item)
+         c++
+      }
+   }
 }
